@@ -26,8 +26,17 @@ public class Player : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Player collider with" + other.gameObject.name);
-        Debug.Log("Player collider with force " + other.impulse);
-        Debug.Log("Palyer collider with relative velocity" + other.relativeVelocity);
+        if (other.gameObject.tag.Equals("obstacle"))
+        {
+            Debug.Log("Player collider with" + other.gameObject.name);
+            Debug.Log("Player collider with force " + other.impulse);
+            Debug.Log("Palyer collider with relative velocity" + other.relativeVelocity);
+            Debug.Log("Player collider with contact points " + other.contacts[0].point);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        other.gameObject.SetActive(false);
+        Destroy(other.gameObject, 1f);
     }
 }
