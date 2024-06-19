@@ -16,6 +16,8 @@ public class RayItem : MonoBehaviour, IRayItem
     {
         Debug.Log("OnPointerEnter");
         gameObjectRenderer.material.color = activeColor;
+        UIManager.Instance.ShowInfoPanel(gameObject, transform.position);
+
 
     }
 

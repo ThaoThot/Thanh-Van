@@ -36,4 +36,12 @@ public class VRInteractionButton : MonoBehaviour , IRayItem
         transform.localScale = Vector3.one; 
         _isHover = false;
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        OnPointerEnter();
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        OnPointerExit();
+    }
 }
