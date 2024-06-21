@@ -81,7 +81,7 @@ Material:
     - Vector1_dada42ebfac44076897b6de67441ba32: 0.3
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _wavePower: 0.2
+    - _wavePower: 2
     m_Colors:
     - Color_36218622185947c6a5ae36366d8e21d8: {r: 0.18801177, g: 0.55574864, b: 0.6132076,
         a: 0.9607843}
