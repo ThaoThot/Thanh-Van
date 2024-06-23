@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,7 +27,6 @@ public class HpView : MonoBehaviour
     void HpChangeTo(int to)
     {
         var filder = _slider.fillRect.GetComponent<Image>();
-        _slider.value = 50;
         _slider.DOValue(to, 1f)
             .SetEase(Ease.InCirc)
             .OnUpdate(() =>
@@ -44,5 +44,10 @@ public class HpView : MonoBehaviour
                     filder.DOColor(Color.green, .5f);
                 }
             });
+    }
+    // Update is called once per frame
+    void Update()
+    {
+
     }
 }
