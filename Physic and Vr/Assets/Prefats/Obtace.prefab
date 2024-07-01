@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5789990894508227278}
   - component: {fileID: 8968949281999419998}
   - component: {fileID: 4267909864417024523}
+  - component: {fileID: 1694002023471119680}
   m_Layer: 0
   m_Name: Obtace
   m_TagString: obstacle
@@ -133,3 +134,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1694002023471119680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4584767662509277874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  _assetId: 1162995572
+  serverOnly: 0
+  visibility: 0
+  hasSpawned: 0
