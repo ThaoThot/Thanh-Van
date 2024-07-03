@@ -7,7 +7,7 @@ namespace DefaultNamespace
     public class SingleTon<T> : MonoBehaviour where T : SingleTon<T>
     {
         //vuthuthaotoirr
-        //laine
+        
         private static T _instance;
         public static T Instance => _instance;
         [SerializeField] private bool isDontDestroyOnload;
